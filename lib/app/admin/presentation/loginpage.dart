@@ -14,7 +14,6 @@ class _AdminLoginScreenState extends State<AdminLoginScreen> {
   var passwordController = TextEditingController();
   var isObsecure = true.obs;
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -164,8 +163,7 @@ class _AdminLoginScreenState extends State<AdminLoginScreen> {
                                   borderRadius: BorderRadius.circular(30),
                                   child: InkWell(
                                     onTap: () {
-                                      if (forkey.currentState!.validate()) {
-                                      }
+                                      if (forkey.currentState!.validate()) {}
                                     },
                                     borderRadius: BorderRadius.circular(30),
                                     child: const Padding(
@@ -181,27 +179,28 @@ class _AdminLoginScreenState extends State<AdminLoginScreen> {
                                     ),
                                   ),
                                 ),
-                          const Divider(),
-                          //text button for Admin signup
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              const Text(
-                                "For User account",
-                                style: TextStyle(color: Colors.white),
-                              ),
-                              TextButton(
-                                  onPressed: () {
-                                    Get.to(const LoginScreen());
-                                  },
-                                  child: const Text(
-                                    "Click here",
-                                    style: TextStyle(
-                                        color: Color.fromARGB(255, 33, 33, 243),
-                                        fontSize: 16),
-                                  ))
-                            ],
-                          )
+                                const Divider(),
+                                //text button for Admin signup
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    const Text(
+                                      "For User account",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                    TextButton(
+                                        onPressed: () {
+                                          Get.to(const LoginScreen());
+                                        },
+                                        child: const Text(
+                                          "Click here",
+                                          style: TextStyle(
+                                              color: Color.fromARGB(
+                                                  255, 33, 33, 243),
+                                              fontSize: 16),
+                                        ))
+                                  ],
+                                )
                               ],
                             ),
                           ),

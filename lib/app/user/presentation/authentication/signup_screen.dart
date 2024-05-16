@@ -30,7 +30,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
         },
       );
 
-      if (res.statusCode == 200) //connection with api to server -sucessfully
+      if (res.statusCode == 200) //connection with api to server -successfully
       {
         var resBodyOfValidateEmail = jsonDecode(res.body);
         if (resBodyOfValidateEmail['emailFound'] == true) {

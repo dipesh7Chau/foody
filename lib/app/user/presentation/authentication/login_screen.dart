@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:foody/app/admin/presentation/loginpage.dart';
 import 'package:foody/app/user/data/api/api_connection.dart';
 import 'package:foody/app/user/data/api/model/user.dart';
 import 'package:foody/app/user/presentation/authentication/forgot_password.dart';
@@ -288,7 +287,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               ),
                               TextButton(
                                   onPressed: () {
-                                    Get.to(const AdminLoginScreen());
+                                    
                                   },
                                   child: const Text(
                                     "Click here",
